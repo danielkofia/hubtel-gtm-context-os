@@ -29,4 +29,15 @@ Hubtel: [one line to fill in after research, with source].
 - Log every change in this week's work log.
 
 ## Tools
-(None yet.)
+GTM stack: Clay (enrichment and list building), HubSpot (CRM), n8n (automation).
+Helpers in `tools/`: `rex/` (drive Clay from Claude, unofficial), `agent-browser/` (browser automation), `crawl4ai/` (site crawling to Markdown). Read each README before use.
+
+## Skills (`.claude/skills/`)
+- `signal-matrix`: build ICP and signal matrices. `campaign-strategy`: generate campaign ideas.
+- `build-workflow-spec`: turn a play into a workflow spec. `campaign-copy`: write cold email and LinkedIn copy from an approved spec.
+- `campaign-contract`: write the Clay build sheet. `campaign-qa`: QA a table or campaign against its spec.
+- `clay-build-plan`: step-by-step Clay build guide. `build-clay`: build or repair a Clay outbound workbook.
+- `design-clay-table-json`: write Clay table JSON. `import-clay-table`: import it into Clay. `save-clay-schema`: save a table to the registry. `export-tables`: export Clay tables to CSV.
+- `prompt-builder`: build per-row AI prompts. `calculate-costs` and `workspace-cost-audit`: report Clay and AI spend.
+- `inbox-placement-test`: test cold email inbox placement. `miro-gtm-flowchart`: draw GTM flows in Miro.
+- `agent-browser`: automate browsers. `crawl4ai`: crawl sites into Markdown.
