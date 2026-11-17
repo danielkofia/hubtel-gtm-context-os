@@ -4,7 +4,7 @@
 Hubtel is a Ghana-based payments and digital commerce company, founded 2005 as SMSGH, serving about 8,000 businesses with 722 staff (self-reported; sources in `context/docs/research/company.md`).
 
 ## How this folder works
-- `context/icp/`: `icp.md` (five-layer ICP and non-fits) and `personas.md` (champion, economic buyer, influencer). Read before targeting, list building or personalizing.
+- `context/icp/`: `icp.md` (five-layer ICP and non-fits) and `personas.md` (champion, economic buyer, influencer) and `signal-matrix.md` (segment angles and buying signals). Read before targeting, list building or personalizing.
 - `context/positioning/`: positioning, value props, competitive angles. Read before writing any pitch or campaign.
 - `context/messaging/`: approved messaging, tone and proof points. Read before drafting any copy.
 - `context/brand-kit/`: logos, colors, fonts, voice rules. Read before producing anything visual or branded.
