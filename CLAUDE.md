@@ -9,6 +9,7 @@ Hubtel is a Ghana-based payments and digital commerce company, founded 2005 as S
 - `context/messaging/`: `messaging.md` (core message, pillars, persona angles, words to use and avoid) and `facts.md` (the only source of claims for sent copy; nothing approved yet). Read before drafting any copy.
 - `context/brand-kit/`: logos, colors, fonts, voice rules. Read before producing anything visual or branded.
 - `context/docs/research/`: raw company and market research with sources. Read when you need a fact, then cite it.
+- `context/docs/gtm-system.md`: the 12-step outbound system, with tools and decisions per step. Read before building or changing any workflow.
 - `knowledge-base/playbooks/`: repeatable how-to processes. Read before running a recurring task.
 - `knowledge-base/learnings/`: what worked and what did not. Read before planning or repeating a campaign.
 - `meetings/`: notes and transcripts from calls. Read when you need decisions or customer language.
