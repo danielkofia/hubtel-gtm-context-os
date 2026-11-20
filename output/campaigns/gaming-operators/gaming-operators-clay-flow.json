@@ -1,0 +1,156 @@
+{
+  "title": "How the gaming operators workflow moves through Clay",
+  "subtitle": "Each row is a table. Follow the numbers left to right. Paid steps only run on rows that passed every step before them. Cell C is held and never gets people or emails.",
+  "lanes": [
+    {
+      "id": "excl",
+      "name": "Exclusions",
+      "note": "you upload it",
+      "dashed": true
+    },
+    {
+      "id": "reg",
+      "name": "Register Import",
+      "note": "one row per brand,\nre-imported monthly"
+    },
+    {
+      "id": "ops",
+      "name": "Operators",
+      "note": "one row per brand.\nThe main table.",
+      "main": true
+    },
+    {
+      "id": "co",
+      "name": "Companies",
+      "note": "one row per legal company"
+    },
+    {
+      "id": "ppl",
+      "name": "People",
+      "note": "buyers at companies\nin cells A, B, D"
+    }
+  ],
+  "steps": [
+    {
+      "id": "x",
+      "n": "0",
+      "lane": "excl",
+      "col": 2,
+      "title": "Never contact",
+      "text": "Hubtel customers and open pipeline you upload",
+      "cost": null
+    },
+    {
+      "id": "s1",
+      "n": "1",
+      "lane": "reg",
+      "col": 1,
+      "title": "Import the register",
+      "text": "Brand-level CSV from the Gaming Commission list. New or listed?",
+      "cost": "free"
+    },
+    {
+      "id": "s2",
+      "n": "2",
+      "lane": "ops",
+      "col": 2,
+      "title": "Keep included brands",
+      "text": "Online licence types, licence still valid. 47 brands",
+      "cost": "free"
+    },
+    {
+      "id": "s3",
+      "n": "3",
+      "lane": "ops",
+      "col": 3,
+      "title": "Find the website",
+      "text": "Brand name to domain. You check each one",
+      "cost": "paid"
+    },
+    {
+      "id": "s4",
+      "n": "4",
+      "lane": "ops",
+      "col": 4,
+      "title": "Read the brand site",
+      "text": "Legal company from footer. Hubtel named on the deposit page?",
+      "cost": "paid"
+    },
+    {
+      "id": "s5",
+      "n": "5",
+      "lane": "co",
+      "col": 5,
+      "title": "One row per company",
+      "text": "Dedupe by legal company. LinkedIn page. Open payments or finance jobs",
+      "cost": "paid"
+    },
+    {
+      "id": "s6",
+      "n": "6",
+      "lane": "ops",
+      "col": 6,
+      "title": "Route to a cell",
+      "text": "New or listed x hiring = A, B, C, D. C is held. Ready to contact?",
+      "cost": "free",
+      "highlight": true
+    },
+    {
+      "id": "s7",
+      "n": "7",
+      "lane": "ppl",
+      "col": 6,
+      "title": "Find the buyer",
+      "text": "People search at ready companies. One person per company",
+      "cost": "free"
+    },
+    {
+      "id": "s8",
+      "n": "8",
+      "lane": "ppl",
+      "col": 7,
+      "title": "Email and send list",
+      "text": "Find and verify email. Variables ready. Sequencer not run",
+      "cost": "paid"
+    }
+  ],
+  "arrows": [
+    {
+      "from": "s1",
+      "to": "s2",
+      "label": "included brands only"
+    },
+    {
+      "from": "x",
+      "to": "s4",
+      "label": "checked against",
+      "dashed": true
+    },
+    {
+      "from": "s2",
+      "to": "s3"
+    },
+    {
+      "from": "s3",
+      "to": "s4"
+    },
+    {
+      "from": "s4",
+      "to": "s5"
+    },
+    {
+      "from": "s5",
+      "to": "s6",
+      "label": "company facts go back\nto each brand"
+    },
+    {
+      "from": "s6",
+      "to": "s7",
+      "label": "cells A, B, D only"
+    },
+    {
+      "from": "s7",
+      "to": "s8"
+    }
+  ]
+}
